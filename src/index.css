@@ -1,0 +1,86 @@
+/* index.css */
+
+/* Estilos para el contenedor principal */
+
+.jobs__list {
+  padding: 20px;
+  background-color: #1f1f1f; /* Color de fondo oscuro */
+  text-align: center; /* Centra el contenido */
+  color: #fcfcfc;
+  font-size: 1.5rem;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Estilos para el panel de búsqueda */
+.search__panel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.search__panel input[type="text"],
+.search__panel select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.search__panel button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Transición suave */
+}
+
+.search__panel button:hover {
+  background-color: #0056b3; /* Cambio de color al pasar el mouse */
+}
+
+/* Estilos para la lista de trabajos */
+.job__wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.job__item {
+  background-color: #333; /* Color de fondo oscuro */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  transition: transform 0.3s ease; /* Transición suave */
+}
+
+.job__item:hover {
+  transform: translateY(-5px); /* Elevación al pasar el mouse */
+}
+
+.job__item img {
+  display: block;
+  margin: 0 auto; /* Centra la imagen */
+  width: 120px; /* Aumenta un poco el tamaño */
+}
+
+.job__content h1 {
+  font-size: 1.8rem; /* Aumenta un poco el tamaño de la letra */
+  color: #fff; /* Color de letra blanco */
+}
+
+.job__content h1 a {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s ease; /* Transición suave */
+}
+
+.job__content h1 a:hover {
+  color: #0056b3; /* Cambio de color al pasar el mouse */
+  text-decoration: underline;
+}
